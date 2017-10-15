@@ -36,7 +36,9 @@ def insertion_sort(arr):
     return arr
  
 #lst = [37, 23, 0, 17, 12, 72, 31, 46, 100, 88, 54]
-l = randint(1000,10000)
+
+#l = randint(1000,10000)
+l = 1000
 lst = []
 for i in range(l):
  lst.append(randint(3*10**4,3*10**5))
@@ -44,6 +46,7 @@ start_time = time.time()
 print("\nSorted array:")
 print(insertion_sort(lst))
 exec_time = (time.time() - start_time)
-print("\nExecution time: %s seconds" % exec_time)
+print("\nTotal Elements: %s" % l)
+print("Execution time: %s seconds" % exec_time)
  
 # Code contributed by Mohit Gupta_OMG 
